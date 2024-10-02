@@ -1,0 +1,78 @@
+.account {
+    @include common-padding;
+    background: #F8F9FA;
+    & #table {
+        @include sm {
+            overflow: auto;
+        }
+        & .tr {
+            display: flex;
+            border: 1px solid #E0E0E0;
+            background: $white;
+            // &:not(:last-child) {
+            //     border-bottom: 0;
+            // }
+            &:first-child {
+                background: #F8F9FA;
+            }
+            @include sm {
+                width: max-content;
+            }
+            & .th,
+            .td {
+                @include xxxl {
+                    width: 319.66px;
+                }
+                width: 33.33333%;
+                padding: 24px;
+                padding-bottom: 30px;
+                border: 1px solid #E0E0E0;
+                border-top: 0;
+                border-bottom: 0;
+                @include md {
+                    padding: 16px;
+                }
+                @include sm {
+                    width: 300px;
+                    flex: 0 0 auto;
+                }
+                &:first-child {
+                    border-left: 0;
+                }
+                &:last-child {
+                    border-right: 0;
+                }
+            }
+            & .th {
+                padding-left: 84px;
+                & img {
+                    max-width: none;
+                    --size: 24px;
+                    width: var(--size);
+                    height: var(--size);
+                    margin-bottom: 12px;
+                }
+                & h5 {
+                    font-weight: normal;
+                    margin-bottom: 0;
+                    font-size: 23.064px;
+                }
+            }
+            & .td {
+                & span {
+                    color: #6F6F6F;
+                }
+                & p {
+                    font-weight: 700;
+                }
+                & a {
+                    color: #1E54B7;
+                    padding-right: 8px;
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+}

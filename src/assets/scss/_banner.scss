@@ -1,0 +1,134 @@
+.banner {
+    &-area {
+        // height: 580px;
+        .main-section {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            @include sm {
+                background-size: cover;
+            }
+        }
+        .slider-content {
+            max-width: 945px;
+            text-align: start;
+            padding: 155px 0;
+            @include lg {
+                padding: 120px 0;
+            }
+            @include md {
+                padding: 100px 0;
+            }
+            @include sm {
+                padding: 80px 0;
+            }
+            &-text {
+                padding-right: 510px;
+                @include lg {
+                    padding-right: 0px;
+                    text-align: center;
+                    padding: 0px 235px;
+                }
+                @include md {
+                    padding-right: 0px;
+                    text-align: center;
+                    padding: 0px 150px;
+                }
+                @include sm {
+                    padding-right: 0;
+                    text-align: center;
+                }
+                h2 {
+                    color: $white;
+                    font-family: $font-1;
+                    @include font-52;
+                }
+                p {
+                    color: $white;
+                    @include font-20;
+                }
+            }
+        }
+    }
+    span.swiper-pagination-bullet {
+        --width: 8px;
+        color: white;
+        background: white;
+        opacity: 1;
+        height: var(--width);
+        width: var(--width);
+        flex: o o auto;
+    }
+    span.swiper-pagination-bullet-active {
+        --width: 12px;
+        height: var(--width) !important;
+        width: var(--width) !important;
+        background: #FF6633;
+        border: 3px solid $white;
+        border-radius: 50%;
+        flex: 0 0 auto;
+    }
+    .swiper-pagination {
+        position: absolute;
+        text-align: center;
+        transition: 300ms opacity;
+        transform: translate3d(0, 0, 0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .swiper-nav {
+        .nav1,
+        .nav2 {
+            background: transparent;
+            color: #AEA7A7;
+            padding: 16px !important;
+            // &[disabled] {
+            //     display: none !important;
+            // }
+        }
+        .nav2 {
+            right: 20%;
+            @include xxl {
+                right: 8%;
+            }
+            @include xl {
+                right: 8%;
+            }
+            @include lg {
+                right: 8%;
+            }
+            @include lg {
+                right: 8%;
+            }
+            @include md {
+                right: 5%;
+            }
+            @include sm {
+                display: none !important;
+            }
+        }
+        .nav1 {
+            transform: scaleX(-1) !important;
+            left: 20%;
+            @include xxl {
+                left: 8%;
+            }
+            @include xl {
+                left: 8%;
+            }
+            @include lg {
+                left: 8%;
+            }
+            @include md {
+                left: 5%;
+            }
+            @include md {
+                left: 5%;
+            }
+            @include sm {
+                display: none !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,132 @@
+.service {
+    padding-top: 140px;
+    @include xl {
+        padding-top: 90px;
+    }
+    @include lg {
+        padding-top: 80px;
+    }
+    @include md {
+        padding-top: 65px;
+    }
+    @include sm {
+        padding-top: 55px;
+    }
+    @include ssm {
+        padding-top: 45px;
+    }
+    &-wrap {
+        gap: 48px;
+        @include mmd {
+            gap: 28px;
+        }
+        &-left {
+            max-width: 578px;
+            @include md {
+                max-width: 420px;
+            }
+            @include sm {
+                width: 100%;
+            }
+            & .fp {
+                color: $secondary;
+                font-family: $font-2;
+                font-size: 18px;
+                line-height: 150%;
+                margin-bottom: 50px;
+                @include sm {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        &-right {
+            & .items {
+                max-width: 317px;
+                gap: 40px;
+                @include xxl {
+                    gap: 20px;
+                }
+                @include xl {
+                    gap: 12px;
+                }
+                @include lg {
+                    gap: 12px;
+                }
+                @include mmd {
+                    gap: 12px;
+                }
+                @include sm {
+                    max-width: 80%;
+                    margin: 0 auto;
+                }
+                &-single {
+                    max-width: 105px;
+                    padding-bottom: 20px;
+                    @include sm {
+                        max-width: 35%;
+                    }
+                    & .icon {
+                        margin-bottom: 24px;
+                        @include sm {
+                            margin-bottom: 12px;
+                        }
+                        & img {
+                            @include sm {
+                                max-width: 40px;
+                            }
+                        }
+                    }
+                    & p {
+                        color: $heading;
+                        text-align: center;
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 130%;
+                    }
+                }
+            }
+        }
+    }
+    &-card {
+        & .text {
+            background: #F0F2F4;
+            & .Logo {
+                --size: 32px;
+                width: var(--size);
+                height: var(--size);
+                & img {
+                    max-width: none;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        & .content {
+            width: 100%;
+            background-image: url(../img/service-content-bg.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100% 100%;
+            padding: 40px 82px;
+            border-radius: 0 0 6px 6px;
+            @include sm {
+                margin-bottom: 26px;
+            }
+            & ul>li {
+                &:not(:last-child) {
+                    margin-bottom: 18px;
+                }
+                & a {
+                    & img {
+                        @include transition;
+                    }
+                    &:hover {
+                        & img {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

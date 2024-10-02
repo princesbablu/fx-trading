@@ -1,0 +1,100 @@
+.how {
+    @include xxxl {
+        padding-top: 114px;
+        padding-bottom: 140px;
+    }
+    padding: 110px 0;
+    @include xl {
+        padding: 90px 0;
+    }
+    @include lg {
+        padding: 80px 0;
+    }
+    @include md {
+        padding: 65px 0;
+    }
+    @include sm {
+        padding: 55px 0;
+    }
+    @include ssm {
+        padding: 45px 0;
+    }
+    &-card {
+        background-color: #F4F4F4;
+        border-radius: 16px;
+        @include sm {
+            margin-bottom: 20px;
+        }
+        & img {
+            border-radius: 16px 16px 0 0;
+            max-width: none;
+            width: 100%;
+        }
+        & .text {
+            padding: 31px 24px;
+            padding-bottom: 67px;
+            @include md {
+                padding-bottom: 45px;
+            }
+            @include sm {
+                padding-bottom: 35px;
+            }
+            & span,
+            p {
+                color: #6F6F6F;
+                font-family: $font-2;
+                line-height: 136.485%;
+            }
+            & span {
+                font-size: 13.672px;
+                font-weight: 500;
+                margin-bottom: 8px;
+                display: inline-block;
+            }
+            & p {
+                font-size: 16px;
+            }
+            & h4 {
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 130%;
+                margin-bottom: 27px;
+                @include sm {
+                    margin-bottom: 12px;
+                }
+            }
+        }
+    }
+    &-btn {
+        margin-top: 56px;
+        @include lg {
+            margin-top: 26px;
+        }
+        @include md {
+            margin-top: 26px;
+        }
+        @include sm {
+            margin-top: 18px;
+        }
+        & .btn {
+            margin-bottom: 14px;
+            --bs-btn-border-radius: 100px;
+            padding: 16px 20px;
+            min-width: 315px;
+        }
+        & h6 {
+            margin-bottom: 14px;
+            line-height: 78%;
+        }
+        & .demo {
+            color: $text-2;
+            font-family: $font-2;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 123%;
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+}

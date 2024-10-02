@@ -1,0 +1,43 @@
+.trad {
+    padding-bottom: 80px;
+    padding-top: 77px;
+    @include lg {
+        padding: 60px 0;
+    }
+    @include mmd {
+        padding: 40px 0;
+    }
+    & .nav {
+        padding-left: 10px;
+        &-item {
+            &:not(:last-child) {
+                margin-bottom: 8px;
+            }
+            @include sm {
+                width: max-content;
+                flex: 0 0 auto;
+            }
+        }
+        &-link {
+            background-color: transparent !important;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: calc(24px/18px);
+            color: $heading !important;
+            padding: 8px 20px;
+            border-left: 4px solid transparent;
+            border-radius: 0;
+            @include mmd {
+                border-left-width: 2px;
+            }
+            @include sm {
+                border-left: none;
+                border-bottom: 2px solid transparent;
+            }
+            &.active,
+            &:hover {
+                border-color: $primary;
+            }
+        }
+    }
+}

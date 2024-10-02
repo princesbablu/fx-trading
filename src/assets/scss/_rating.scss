@@ -1,0 +1,47 @@
+.rating {
+    &-area {
+        padding: 40px 0;
+        @include mmd {
+            padding: 20px 0;
+        }
+        p {
+            color: #191919;
+            font-family: $font-2;
+            @include font-16;
+            font-weight: 300;
+            span {
+                font-weight: 500;
+            }
+        }
+        .rating-icon {
+            svg {
+                color: #73CF11;
+            }
+            &:last-child {
+                svg {
+                    color: #DCDCE6;
+                }
+            }
+        }
+    }
+    &-btn {
+        background-image: url("../img/rating-bg.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        background-size: cover;
+        &-area {
+            p,
+            .p {
+                @include font-16;
+                line-height: calc(20px / 16px);
+                color: $black;
+                font-family: $font-2;
+                color: #909294;
+            }
+            .or {
+                color: $black;
+            }
+        }
+    }
+}

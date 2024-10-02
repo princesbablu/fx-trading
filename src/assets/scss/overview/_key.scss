@@ -1,0 +1,61 @@
+.key {
+    @include common-padding;
+    background: $white;
+    & .common-title {
+        padding-bottom: 8px;
+    }
+    &-wrap {
+        gap: 32px;
+        @include sm {
+            gap: 24px;
+        }
+    }
+    &-item {
+        width: 216px;
+        padding: 0 10px;
+        @include xxxl {
+            &:nth-child(-n + 4) {
+                padding-bottom: 8px;
+            }
+        }
+        @include xxl {
+            width: 190px;
+        }
+        @include lg {
+            width: 200px;
+        }
+        @include md {
+            width: 150px;
+            padding: 0;
+        }
+        @include sm {
+            width: 44%;
+            padding: 0;
+        }
+        & .icon {
+            margin-bottom: 16px;
+            @include xl {
+                padding-bottom: 14px;
+            }
+            @include lg {
+                padding-bottom: 14px;
+            }
+            @include mmd {
+                padding-bottom: 14px;
+            }
+        }
+        & .text {
+            color: $heading;
+            font-family: $font-2;
+            @include font-20;
+            font-weight: 700;
+            & a {
+                text-decoration-line: underline !important;
+                color: $heading;
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+    }
+}

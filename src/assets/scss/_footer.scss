@@ -1,0 +1,98 @@
+.footer {
+    border-top: 1px solid $text-2;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    @include sm {
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    &-wrap {
+        @include xxxl {
+            padding-left: 64px;
+        }
+    }
+    &-items {
+        margin-bottom: 30px;
+        @include sm {
+            margin-bottom: 10px;
+        }
+        &-single {
+            max-width: 116px;
+            padding-bottom: 22px;
+            @include md {
+                max-width: 87px;
+                padding-bottom: 6px;
+            }
+            @include ssm {
+                max-width: 102px;
+            }
+            & h4 {
+                color: $text-2;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 133.286%;
+                text-transform: uppercase;
+                margin-bottom: 17px;
+            }
+            & ul {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                & li {
+                    display: inline-flex;
+                    & a {
+                        color: #222;
+                        font-size: 13.672px;
+                        font-weight: 400;
+                        line-height: 133.286%;
+                        &:hover {
+                            color: $primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-bottom {
+        & .mb-34 {
+            margin-bottom: 29px;
+            @include mmd {
+                margin-bottom: 16px;
+            }
+        }
+        &-des {
+            max-width: 602px;
+            @include md {
+                max-width: 465px;
+            }
+            @include sm {
+                max-width: 100%;
+                margin-bottom: 20px;
+            }
+            & p {
+                color: $text-2;
+                font-family: $font-2;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 133%;
+            }
+        }
+    }
+    &-social {
+        & h3 {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 170%;
+            margin-bottom: 15px;
+            @include sm {
+                margin-bottom: 12px;
+            }
+        }
+        & .method {
+            margin-bottom: 24px;
+            @include sm {
+                margin-bottom: 14px;
+            }
+        }
+    }
+}

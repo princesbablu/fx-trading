@@ -1,0 +1,112 @@
+.payment {
+    padding-bottom: 80px;
+    padding-top: 77px;
+    @include lg {
+        padding: 60px 0;
+    }
+    @include mmd {
+        padding: 40px 0;
+    }
+    h1 {
+        color: #161616;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 52.8px;
+        margin-bottom: 60px;
+        opacity: .8;
+        @include sm {
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+    }
+    .section-title {
+        color: #161616;
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 46.2px;
+        margin-bottom: 35px;
+        opacity: .8;
+        @include sm {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+    }
+    &-table {
+        border-top: 1px solid #CFCFCF;
+        border-right: 1px solid #CFCFCF;
+        border-left: 1px solid #CFCFCF;
+        background: rgba(255, 255, 255, 0.00);
+        box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.20);
+        min-width: 1056px;
+        .accordion {
+            --bs-accordion-color: transparent;
+            --bs-accordion-bg: transparent;
+            --bs-accordion-border-color: none;
+            --bs-accordion-border-width: 0;
+            .accordion-header {
+                padding: 16px 20px;
+                button {
+                    padding: 0;
+                    outline: none;
+                    box-shadow: none;
+                    &:after {
+                        position: absolute;
+                        right: 0;
+                    }
+                }
+            }
+            .accordion-body {
+                padding: 0;
+                p {
+                    padding-inline: 20px;
+                    padding-bottom: 25px;
+                    color: #161616;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 150%;
+                    max-width: 65%;
+                    @include lg {
+                        max-width: 80%;
+                    }
+                    @include md {
+                        max-width: 80%;
+                    }
+                    @include sm {
+                        max-width: 100%;
+                    }
+                }
+            }
+            .accordion-item {
+                border-bottom: 1px solid #CFCFCF;
+                .single-item {
+                    width: 20%;
+                }
+            }
+        }
+        .accordion-button:not(.collapsed) {
+            background-color: transparent;
+            box-shadow: none
+        }
+        .table-head {
+            padding: 16px 20px;
+            border-bottom: 1px solid #CFCFCF;
+            th {
+                width: 20%;
+                color: #909294;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 23.99px;
+            }
+        }
+        .accordion-button.collapsed {
+            opacity: .6;
+        }
+        .accordion-button {
+            opacity: 1;
+        }
+    }
+}
+
+.payment-table-wrapper {
+    overflow: auto;
+}

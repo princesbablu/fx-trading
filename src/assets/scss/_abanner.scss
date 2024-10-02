@@ -1,0 +1,50 @@
+.abanner {
+    padding-top: 70px;
+    padding-bottom: 56px;
+    background-image: url("../img/abanner-bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include md {
+        padding: 40px 0;
+    }
+    @include sm {
+        padding: 20px 0;
+    }
+    &-content {
+        .image {
+            --width: 46px;
+            width: var(--width);
+            height: var(--width);
+        }
+        p {
+            color: $white;
+            text-align: center;
+            font-family: $font-2;
+            @include font-24;
+            padding: 0 20px;
+            @include xxl {
+                padding: 0 25px;
+            }
+            @include xl {
+                padding: 0;
+            }
+            @include lg {
+                padding: 0 35px;
+            }
+            @include sm {
+                padding: 0 48px;
+            }
+        }
+        .btn {
+            border: 3px solid $white;
+            &:hover {
+                background-color: $primary !important;
+                border-color: $primary;
+            }
+            @include mmd {
+                border: 2px solid $white;
+            }
+        }
+    }
+}
